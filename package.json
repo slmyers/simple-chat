@@ -2,6 +2,7 @@
   "name": "simple-chat",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://slmyers.github.io/simple-chat/",
   "dependencies": {
     "@material-ui/core": "^1.4.3",
     "@material-ui/icons": "^2.0.1",
