@@ -121,7 +121,10 @@ module.exports = {
             options: {
               formatter: eslintFormatter,
               eslintPath: require.resolve('eslint'),
-              
+              plugins: [
+                'transform-decorators-legacy',
+                'transform-class-properties'
+              ],
             },
             loader: require.resolve('eslint-loader'),
           },

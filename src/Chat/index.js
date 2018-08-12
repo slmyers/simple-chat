@@ -1,40 +1,32 @@
 import React, { Component } from "react";
-import styled from 'styled-components';
-import { Grid, Row, Cell } from "./Grid";
+import { withStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import Messages from "./Messages"
 
-const FullCell = styled.div`
-  width: 100%;
-  height: 100%;
-  background-color: pink
-`;
-
+@withStyles(theme => ({
+  root: {
+    width: "75vw",
+    height: "70vh",
+    margin: "2vh auto 0 auto",
+    display: "flex",
+    ['@media (min-width: 800px) and (max-width:1200px)']: {
+      width: "90vw",
+      height: "70vh",
+    },
+    ['@media (max-width:800px)']: {
+      width: "95vw",
+      height: "75vh",
+    },
+  }
+}))
 export default class Chat extends Component {
-  render() {
-    return (
-      <Grid>
-        <Row>
-          <Cell>
-            <FullCell>HI</FullCell>
-          </Cell>
-          <Cell>
-            <FullCell>HI</FullCell>
-          </Cell>
-          <Cell>
-            <FullCell>HI</FullCell>
-          </Cell>
-        </Row>
-        <Row>
-          <Cell>
-            <FullCell>HI</FullCell>
-          </Cell>
-          <Cell>
-            <FullCell>HI</FullCell>
-          </Cell>
-          <Cell>
-            <FullCell>HI</FullCell>
-          </Cell>
-        </Row>
-      </Grid>
+  render(){
+    const { classes: { root }  } = this.props;
+    return(
+      <Paper className={root}>
+        {/*<Sidebar open={sidebarOpen} onSidebarClose={onSidebarClose}/>*/}
+        <Messages />
+      </Paper>
     )
   }
 }
