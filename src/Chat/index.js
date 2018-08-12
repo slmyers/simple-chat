@@ -15,7 +15,7 @@ import Messages from "./Messages"
     },
     ['@media (max-width:800px)']: {
       width: "95vw",
-      height: "75vh",
+      height: "60vh",
     },
   }
 }))
