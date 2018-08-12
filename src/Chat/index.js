@@ -6,16 +6,16 @@ import Messages from "./Messages"
 @withStyles(theme => ({
   root: {
     width: "75vw",
-    height: "70vh",
+    maxHeight: "70vh",
     margin: "2vh auto 0 auto",
     display: "flex",
     ['@media (min-width: 800px) and (max-width:1200px)']: {
       width: "90vw",
-      height: "70vh",
+      maxHeight: "70vh",
     },
     ['@media (max-width:800px)']: {
       width: "95vw",
-      height: "65vh",
+      maxHeight: "65vh",
     },
   }
 }))
