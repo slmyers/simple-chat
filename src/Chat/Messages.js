@@ -31,7 +31,6 @@ export default class extends Component {
             style={{flex: 1}}
             placeholder="Type a message."
             onChange={handleChange}
-            margin="normal"
             value={this.state.draft}
           />
           <Button type={"submit"}>Send</Button>
