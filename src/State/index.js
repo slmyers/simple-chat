@@ -19,7 +19,6 @@ const typeDefs = `
   }
   type Query {
     messages: [Message]
-    getMessage(id: ID!): Message
   }
 `;
 const cache = new InMemoryCache({dataIdFromObject: object => object.id});

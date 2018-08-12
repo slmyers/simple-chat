@@ -22,6 +22,8 @@ import Messages from "./Messages"
 export default class Chat extends Component {
   render(){
     const { classes: { root }  } = this.props;
+
+
     return(
       <Paper className={root}>
         {/*<Sidebar open={sidebarOpen} onSidebarClose={onSidebarClose}/>*/}
