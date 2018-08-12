@@ -7,7 +7,6 @@ export const defaults = {
 export const resolvers = {
   Mutation: {
     addMessage: (_, { content, author }, { cache }) => {
-      console.log("I AM CALLED");
       const query = gql`
           query GetMessages {
               messages @client {
